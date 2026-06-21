@@ -13,21 +13,11 @@ function Footer({ setView }) {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }}>Home</a>
-            </li>
-            <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); setView('products'); }}>Products</a>
-            </li>
-            <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); setView('about'); }}>About Us</a>
-            </li>
-            <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); setView('privacy'); }}>Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); setView('contact'); }}>Contact Us</a>
-            </li>
+            <li><button onClick={() => window.scrollTo(0, 0)}>Home</button></li>
+            <li><button onClick={() => setView('products')}>Products</button></li>
+            <li><button onClick={() => setView('about')}>About Us</button></li>
+            <li><button onClick={() => setView('privacy')}>Privacy Policy</button></li>
+            <li><button onClick={() => setView('contact')}>Contact Us</button></li>
           </ul>
         </div>
 
